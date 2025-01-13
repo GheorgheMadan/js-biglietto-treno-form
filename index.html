@@ -10,25 +10,27 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- CREO IL FORM -->
-    <form action="#">
-        <div class="input-group mb-3">
-            <span class="input-group-text">€</span>
-            <input type="text" id="path-field" class="form-control">
-          </div>
-        <div>
-            <select  id="title-field" class="form-select" aria-label="Default select example">
-                <option selected>Seleziona</option>
-                <option value="1">Minorenne</option>
-                <option value="2">Maggiorenne</option>
-                <option value="3">Over 65</option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Calcola</button>
-    </form>
-    <p id="output">
-
-    </p>
+    <main class="container">
+        <!-- CREO IL FORM -->
+        <form action="#" class="form">
+            <div class="input-group mb-3">
+                <span class="input-group-text">€</span>
+                <input type="text" id="path-field" class="form-control">
+            </div>
+            <div>
+                <select  id="title-field" class="form-select" aria-label="Default select example">
+                    <option selected>Seleziona</option>
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Over 65">Over 65</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcola</button>
+        </form>
+        <p id="output-path"></p>
+        <p id="output-title">
+        </p>
+    </main>
     <!-- JAVASCRIPT -->
     <script src="./js/script.js"></script>
 </body>
