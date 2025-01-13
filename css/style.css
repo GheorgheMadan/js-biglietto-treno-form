@@ -1,0 +1,19 @@
+.biglietto {
+    display: none;
+}
+main {
+    width: 70%;
+    margin: 0, auto;
+}
+.cardon {
+    display: inline;
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: rgba(26, 166, 212, 0.498);
+}
+.bg {
+    background-color: white;
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.3);
+}

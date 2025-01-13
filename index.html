@@ -10,23 +10,74 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="container">
-        <!-- CREO IL FORM -->
-        <form action="#" class="form">
-            <div class="input-group mb-3">
-                <span class="input-group-text">KM</span>
-                <input type="number" id="path-field" class="form-control" placeholder="Inserisci i km da percorere">
+    <header class="container container-sm container-md container-lg mt-5">
+        <h1 class="text-white fw-bolder">
+            Calcola il tuo biglietto!
+        </h1>
+    </header>
+    <main class="container container-sm container-md container-lg mt-5">
+        <div class="row">
+            <!-- CREO IL FORM -->
+             <div class="bg col col-sm-12 col-md-7 col-lg-7 border rounded">
+                <form action="#" class="form">
+                    <!-- nome e cognome -->
+                    <div class="mb-3">
+                        <label class="form-label">Inserisci il tuo nome e cognome:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <!-- inserire i km da percorrere -->
+                    <div>
+                        <div>
+                            <label class="form-label">Inserisci i Km:</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">KM</span>
+                            <input type="number" id="path-field" class="form-control" placeholder="Inserisci i km da percorere">
+                        </div>
+                    </div>
+                    <!-- inserire l'età -->
+                    <div>
+                        <label class="form-label">Inserisci la tua età:</label>
+                        <input type="number" class="form-control" id="age-field" placeholder="Inserisci la tua età">
+                    </div>
+                    <!-- inserire la mail -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Inserisci la tua mail per ricevere il biglietto via mail:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example: nome@mail.it">
+                    </div>
+                    <!-- checkbox  -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Accetto la privacy e policy</label>
+                    </div>
+                    <!-- bottone submit -->
+                    <button type="submit" id="buttone" class="btn btn-primary mb-3">Calcola</button>
+                </form>
             </div>
-            <div>
-                <input type="number" class="form-control" id="age-field" placeholder="Inserisci la tua età">
+            <!-- <hr> -->
+             
+            <div class="card biglietto col col-sm-12 col-md-5 col-lg-5" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Ecco il suo biglietto:</h5>
+                  <span class="form-text fw-semibold">Dettagli Passeggero</span>
+                  <p class="card-text fw-bold" id="output-name"></p>
+                  <div class="form-text fw-semibold">Email</div>
+                  <p class="card-text fw-bold" id="output-mail"></p>
+                  <div class="form-text fw-semibold">Offerta</div>
+                  <p id="offerta" class="fw-bold"></p>
+                  <div class="form-text fw-semibold">Costo Biglietto</div>
+                  <p class="card-text fw-bold" id="result"></p>
+                  <div class="form-text fw-semibold">Carrozza</div>
+                  <p id="random1-7" class="fw-bold"></p>
+                  <div class="form-text fw-semibold">Codice CP</div>
+                  <p id="random1000" class="fw-bold"></p>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Calcola</button>
-        </form>
-        <!-- <p id="output-path"></p>
-        <p id="output-age"></p> -->
-        <p id="result"></p>
+        </div>
+            
     </main>
     <!-- JAVASCRIPT -->
+     <script src="./js/Funzioni.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
